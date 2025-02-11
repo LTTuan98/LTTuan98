@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thêm Thu Chi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Thêm Thu Chi</h1>
+  </header>
+
+  <main>
+    <form id="transaction-form">
+      <label for="transaction-type">Loại Giao Dịch</label>
+      <select id="transaction-type" name="transaction-type">
+        <option value="income">Thu</option>
+        <option value="expense">Chi</option>
+      </select>
+
+      <label for="amount">Số Tiền (VND)</label>
+      <input type="number" id="amount" name="amount" required>
+
+      <label for="reason">Lý Do</label>
+      <select id="reason" name="reason" required>
+        <option value="Nợ">Nợ</option>
+        <option value="Bia">Bia</option>
+        <option value="Ăn uống">Ăn uống</option>
+        <option value="Nạp ĐT">Nạp ĐT</option>
+        <option value="Đi Chơi">Đi Chơi</option>
+        <option value="Đưa mẹ">Đưa mẹ</option>
+        <option value="WIFI 1">WIFI 1</option>
+        <option value="WIFI 2">WIFI 2</option>
+        <option value="Xe Cộ">Xe Cộ</option>
+        <option value="Khác">Khác</option>
+        <option value="Khác">Lương</option>
+      </select>
+
+      <label for="date">Ngày</label>
+      <input type="date" id="date" name="date" required>
+
+      <button type="submit">Lưu</button>
+    </form>
+
+    <button onclick="location.href='index.html'" class="back-btn">Quay Về Trang Chủ</button>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

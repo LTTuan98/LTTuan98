@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản Lý Chi Tiêu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Quản Lý Chi Tiêu</h1>
+  </header>
+
+  <main>
+    <section class="summary">
+      <div class="summary-item">
+        <h3>Tổng Thu: <span id="total-income">0</span> VND</h3>
+      </div>
+      <div class="summary-item">
+        <h3>Tổng Chi: <span id="total-expense">0</span> VND</h3>
+      </div>
+      <div class="summary-item">
+        <h3>Số Tiền Còn: <span id="remaining-balance">0</span> VND</h3>
+      </div>
+    </section>
+    <button onclick="location.href='add.html'" class="add-btn">Thêm Thu Chi</button>
+    <!-- Danh sách Thu và Chi nằm trên một dòng -->
+    <section class="lists">
+      <div class="list">
+        <h3>Danh Sách Thu</h3>
+        <table id="income-table">
+          <thead>
+            <tr>
+              <th>Ngày</th>
+              <th>Số Tiền</th>
+              <th>Lý Do</th>
+              <th>Thao Tác</th>
+            </tr>
+          </thead>
+          <tbody id="income-list"></tbody>
+        </table>
+      </div>
+
+      <div class="list">
+        <h3>Danh Sách Chi</h3>
+        <table id="expense-table">
+          <thead>
+            <tr>
+              <th>Ngày</th>
+              <th>Số Tiền</th>
+              <th>Lý Do</th>
+              <th>Thao Tác</th>
+            </tr>
+          </thead>
+          <tbody id="expense-list"></tbody>
+        </table>
+      </div>
+    </section>
+
+    
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
